@@ -50,7 +50,7 @@ app.post('/enc', (request, response) => {
 
 // start api server
 const port = parsePort(5000)
-app.listen(port || process.env.PORT, () => {
+app.listen( process.env.PORT || port , () => {
     // console.info(`server now listening at port ${port}`);
     console.info(`server running @ http://0.0.0.0:${port}`)
 });
